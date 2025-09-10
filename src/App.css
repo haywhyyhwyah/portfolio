@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -11,6 +15,20 @@ nav{
     background-color: #050402;
     position: sticky;
     top: 0;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .nav-list ul {
+        gap: 15px;
+    }
+    .nav-name {
+        font-size: 2rem;
+    }
 }
 
 .nav-list ul{
@@ -56,6 +74,24 @@ nav{
     align-items: center;
 }
 
+@media (max-width: 1200px) {
+    .header {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        padding: 40px 10vw;
+        gap: 30px;
+    }
+    .header-text, .pics {
+        width: 100%;
+        padding: 40px 0;
+    }
+}
+
 .p-1{
     font-size: 24px;
     color: #c1eafe;
@@ -74,6 +110,13 @@ nav{
     width: 50%;
 }
 
+@media (max-width: 900px) {
+    .header-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .pics{
     background-image: url(./assets/IMG_6386.jpg);
     background-size: cover;
@@ -84,6 +127,13 @@ nav{
     border-radius: 10px;
 }
 
+@media (max-width: 900px) {
+    .pics {
+        width: 100%;
+        padding: 120px 0;
+    }
+}
+
 .pics:hover{
     background-blend-mode: overlay;
     background-color: #0005;
@@ -92,6 +142,13 @@ nav{
 
 .bg-text{
     width: 50%;
+}
+
+@media (max-width: 900px) {
+    .bg-text {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .bg-text h2{
@@ -121,6 +178,24 @@ nav{
     background-color: #1c1d24;
 }
 
+@media (max-width: 1200px) {
+    .picture {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .picture {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 10vw;
+    }
+    .bg-picture {
+        width: 100%;
+        padding: 120px 0;
+    }
+}
+
 .bg-picture{
     background-image: url(./assets/electronic-circuit-board-lock-abstract-binary-programming-code-background-hight-technology-design-user-is-denied-access-vector-illustration-eps-10_185386-594.jpg);
     background-size: cover;
@@ -129,6 +204,13 @@ nav{
     width: 50%;
     padding: 230px;
     border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .bg-picture {
+        width: 100%;
+        padding: 120px 0;
+    }
 }
 
 .stacks{
@@ -140,15 +222,39 @@ nav{
     align-items: center;
 }
 
+@media (max-width: 900px) {
+    .stacks {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 10vw;
+    }
+}
+
 .contacts{
     padding: 80px;
     background-color: #1c1d24;
+}
+
+@media (max-width: 900px) {
+    .contacts {
+        padding: 40px 5vw;
+    }
 }
 
 .contacts-child{
     display: flex;
     gap: 25px;
     margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+    .contacts-child {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mail-location {
+        width: 100%;
+    }
 }
 
 .mail-location{
@@ -170,6 +276,17 @@ form{
     width: 80%;
     display: flex;
     gap: 30px;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    input, textarea {
+        width: 100%;
+    }
 }
 
 input{
